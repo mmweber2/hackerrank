@@ -14,8 +14,17 @@ def test_cannot_reach_1():
 def test_unreachable():
     assert_equals(0, get_ways(4, [3]))
 
+def test_large_coin():
+    assert_equals(0, get_ways(5, [50]))
+
 def test_reach_first_coin():
     assert_equals(1, get_ways(1, [1, 2]))
 
 def test_reach_later_coin():
     assert_equals(1, get_ways(5, [2, 4, 5]))
+
+def test_multiple_coins():
+    assert_equals(1, get_ways(5, [2, 3]))
+
+def test_multiples_single_coin():
+    assert_equals(1, get_ways(3, [1, 5]))
