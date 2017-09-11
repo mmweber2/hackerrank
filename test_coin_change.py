@@ -28,3 +28,6 @@ def test_multiple_coins():
 
 def test_multiples_single_coin():
     assert_equals(1, get_ways(3, [1, 5]))
+
+def test_multiple_ways():
+    assert_equals(3, get_ways(3, [8, 1, 3, 2]))
